@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+    <head>
+
+        <meta charset="UTF-8">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Gráfico de Barras</title>
+
+        <!-- Inclua a biblioteca Chart.js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+        <style>
+                
+                #myChart {
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    margin: 20px;
+                }
+
+                .content-pieChart {
+                    width: 200px;
+                    height: 200px;
+                }
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <!-- Crie um elemento canvas para renderizar o gráfico de barras -->
+        <canvas id="myChart" width="200" height="50"></canvas>
+
+        <div class="content-pieChart">
+            <!-- Crie um elemento canvas para renderizar o gráfico de rosca -->
+            <canvas id="myPieChart" width="200" height="50"></canvas>
+        </div>
+
+        <script src="./main.js"></script>
+
+    </body>
+
+</html>
