@@ -19,7 +19,7 @@ const objLineChart = new Chart(lineChart, {
         datasets: [
             {
                 label: "Indice de Contratação",
-                data: [65, 59, 80, 81, 56, 55, 40, 40, 40, 40, 40, 40],
+                data: [80, 80, 75, 70, 56, 55, 40, 40, 40, 40, 40, 40],
                 borderColor: "rgba(75, 192, 192, 1)",
                 backgroundColor: "rgba(75, 192, 192, 0.2)",
                 borderWidth: 2,
@@ -27,7 +27,7 @@ const objLineChart = new Chart(lineChart, {
             },
             {
                 label: "Indice de Demissão",
-                data: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+                data: [20, 30, 32, 40, 30, 20, 10, 10, 55, 60, 62, 69],
                 borderColor: " rgba(179, 38, 38, 1)",
                 backgroundColor: "rgba(255, 4, 4, 0.2)",
                 borderWidth: 2,

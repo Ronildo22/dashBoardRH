@@ -29,18 +29,31 @@
                     </header>
                     <div class="row">
                         <div class="col-6">
-                          <h5 class="row d-flex justify-content-center">Quantidade Funcionarios</h5>
+                            <h5 class="row d-flex justify-content-center">
+                                Quantidade Funcionarios
+                            </h5>
                             <canvas id="barChart"></canvas>
                         </div>
                         <div class="col-6">
-                          <h5 class="row d-flex justify-content-center">Índice</h5>
+                            <h5 class="row d-flex justify-content-center">
+                                Índices de Turnover
+                            </h5>
                             <canvas id="lineChart"></canvas>
                         </div>
                     </div>
-                    <div class="row w-25 p-3">
-                      <div class="d-flex justify-content-center mt-4">
-                        <canvas id="doughnutChart"></canvas>
-                      </div>
+                    <div class="row mt-5">
+                        <div class="col-6">
+                            <h5 class="row d-flex justify-content-center">
+                                Quantidade por Cargo (Ativo)
+                            </h5>
+                            <canvas id="horizontalBarChartActive"></canvas>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="row d-flex justify-content-center">
+                                Quantidade por Cargo (Faltante)
+                            </h5>
+                            <canvas id="horizontalBarChartLack"></canvas>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -48,7 +61,8 @@
 
         <script type="module" src="./chatsJS/barChart.js"></script>
         <script type="module" src="./chatsJS/lineChart.js"></script>
-        <script type="module" src="./chatsJS/doughnutChart.js"></script>
+        <script type="module" src="./chatsJS/horizontalBarChartActive.js"></script>
+        <script type="module" src="./chatsJS/horizontalBarChartLack.js"></script>
         <script type="module" src="./main.js"></script>
 
         <script

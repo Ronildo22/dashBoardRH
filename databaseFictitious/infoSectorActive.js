@@ -1,0 +1,148 @@
+// INFORMACOES PARA ADICIONAR NO DoughnutChart
+
+export const infoSectorActive = {
+    FINANCEIRO: {
+        labels: [
+            "Estagiarios",
+            "Analista JR",
+            "Analista Pleno",
+            "Analista Senior",
+            "Gestor",
+        ],
+        data: [2, 3, 5, 3, 2],
+        backgroundColor: [
+            "rgba(75, 192, 192, 1)",
+            "rgba(255, 159, 64, 1)",
+            "rgba(5, 155, 255, 1)",
+            "rgba(255, 99, 132, 1)",
+            "rgba(255, 205, 86, 1)",
+        ],
+        borderColor: [
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+        ],
+    },
+    TI: {
+        labels: [
+            "Estagiarios",
+            "Analista JR",
+            "Analista Pleno",
+            "Analista Senior",
+            "Gestor",
+        ],
+        data: [1, 2, 2, 4, 1],
+        backgroundColor: [
+            "rgba(75, 192, 192, 1)",
+            "rgba(255, 159, 64, 1)",
+            "rgba(5, 155, 255, 1)",
+            "rgba(255, 99, 132, 1)",
+            "rgba(255, 205, 86, 1)",
+        ],
+        borderColor: [
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+        ],
+    },
+    DESENVOLVIMENTO: {
+        labels: [
+            "Estagiarios",
+            "Analista JR",
+            "Analista Pleno",
+            "Analista Senior",
+            "Gestor",
+        ],
+        data: [4, 4, 6, 6, 2],
+        backgroundColor: [
+            "rgba(75, 192, 192, 1)",
+            "rgba(255, 159, 64, 1)",
+            "rgba(5, 155, 255, 1)",
+            "rgba(255, 99, 132, 1)",
+            "rgba(255, 205, 86, 1)",
+        ],
+        borderColor: [
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+        ],
+    },
+    VENDAS: {
+        labels: [
+            "Estagiarios",
+            "Analista JR",
+            "Analista Pleno",
+            "Analista Senior",
+            "Gestor",
+        ],
+        data: [1, 1, 4, 2, 1],
+        backgroundColor: [
+            "rgba(75, 192, 192, 1)",
+            "rgba(255, 159, 64, 1)",
+            "rgba(5, 155, 255, 1)",
+            "rgba(255, 99, 132, 1)",
+            "rgba(255, 205, 86, 1)",
+        ],
+        borderColor: [
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+        ],
+    },
+    RH: {
+        labels: [
+            "Estagiarios",
+            "Analista JR",
+            "Analista Pleno",
+            "Analista Senior",
+            "Gestor",
+        ],
+        data: [1, 1, 4, 2, 1],
+        backgroundColor: [
+            "rgba(75, 192, 192, 1)",
+            "rgba(255, 159, 64, 1)",
+            "rgba(5, 155, 255, 1)",
+            "rgba(255, 99, 132, 1)",
+            "rgba(255, 205, 86, 1)",
+        ],
+        borderColor: [
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+        ],
+    },
+    MARKETING: {
+        labels: [
+            "Estagiarios",
+            "Analista JR",
+            "Analista Pleno",
+            "Analista Senior",
+            "Gestor",
+        ],
+        data: [1, 2, 3, 1, 1],
+        backgroundColor: [
+            "rgba(75, 192, 192, 1)",
+            "rgba(255, 159, 64, 1)",
+            "rgba(5, 155, 255, 1)",
+            "rgba(255, 99, 132, 1)",
+            "rgba(255, 205, 86, 1)",
+        ],
+        borderColor: [
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+            "rgba(255, 255, 255, 1)",
+        ],
+    },
+};

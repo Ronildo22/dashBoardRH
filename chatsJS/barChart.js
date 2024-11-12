@@ -1,13 +1,8 @@
-import { createDoughnutChart } from "../main.js";
-
-export const sector = [
-    "Financeiro",
-    "TI",
-    "Desenvolvimento",
-    "Vendas",
-    "RH",
-    "Marketing",
-];
+import { updateHorizontalChartActive } from "./actionsCharts/updateHorizontalBarChartActive.js";
+import { updateHorizontalChartLack } from "./actionsCharts/updateHorizontalChartLack.js";
+import { sector } from "../databaseFictitious/sector.js";
+import { employeesActive } from "../databaseFictitious/employeesActive.js";
+import { employeesLack } from "../databaseFictitious/employeesLack.js";
 
 const barChart = document.querySelector("#barChart").getContext("2d");
 export const objBarChart = new Chart(barChart, {
@@ -17,14 +12,14 @@ export const objBarChart = new Chart(barChart, {
         datasets: [
             {
                 label: "Funcionarios Ativos",
-                data: [20, 18, 15, 25, 16, 10],
+                data: employeesActive.data,
                 backgroundColor: "rgba(54, 162, 235, 0.5)",
                 borderColor: "rgba(54, 162, 235, 1)",
                 borderWidth: 1,
             },
             {
                 label: "Funcionarios em Falta",
-                data: [5, 2, 5, 0, 5, 8],
+                data: employeesLack.data,
                 backgroundColor: "rgba(255, 99, 132, 0.5)",
                 borderColor: "rgba(255, 99, 132, 1)",
                 borderWidth: 1,
@@ -36,6 +31,8 @@ export const objBarChart = new Chart(barChart, {
             beginAtZero: true,
         },
         onClick: (e) => {
+
+            // ADQUIRE A BARRA CLICADA E MOSTRA A QUANTIDADE DE FUNCIONARIOS POR CARGO
             const canvasPosition = Chart.helpers.getRelativePosition(
                 e,
                 objBarChart
@@ -45,7 +42,8 @@ export const objBarChart = new Chart(barChart, {
                 canvasPosition.x
             );
 
-            createDoughnutChart(dataX);
+            updateHorizontalChartActive(dataX);
+            updateHorizontalChartLack(dataX);
         },
     },
 });
