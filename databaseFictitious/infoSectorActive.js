@@ -9,7 +9,7 @@ export const infoSectorActive = {
             "Analista Senior",
             "Gestor",
         ],
-        data: [2, 3, 5, 3, 2],
+        data: [2, 3, 6, 7, 2],
         backgroundColor: [
             "rgba(75, 192, 192, 1)",
             "rgba(255, 159, 64, 1)",
@@ -33,7 +33,7 @@ export const infoSectorActive = {
             "Analista Senior",
             "Gestor",
         ],
-        data: [1, 2, 2, 4, 1],
+        data: [4, 4, 4, 6, 1],
         backgroundColor: [
             "rgba(75, 192, 192, 1)",
             "rgba(255, 159, 64, 1)",
@@ -57,7 +57,7 @@ export const infoSectorActive = {
             "Analista Senior",
             "Gestor",
         ],
-        data: [4, 4, 6, 6, 2],
+        data: [4, 4, 2, 3, 2],
         backgroundColor: [
             "rgba(75, 192, 192, 1)",
             "rgba(255, 159, 64, 1)",
@@ -81,7 +81,7 @@ export const infoSectorActive = {
             "Analista Senior",
             "Gestor",
         ],
-        data: [1, 1, 4, 2, 1],
+        data: [4, 2, 8, 8, 3],
         backgroundColor: [
             "rgba(75, 192, 192, 1)",
             "rgba(255, 159, 64, 1)",
@@ -105,7 +105,7 @@ export const infoSectorActive = {
             "Analista Senior",
             "Gestor",
         ],
-        data: [1, 1, 4, 2, 1],
+        data: [2, 3, 5, 5, 1],
         backgroundColor: [
             "rgba(75, 192, 192, 1)",
             "rgba(255, 159, 64, 1)",
@@ -129,7 +129,7 @@ export const infoSectorActive = {
             "Analista Senior",
             "Gestor",
         ],
-        data: [1, 2, 3, 1, 1],
+        data: [2, 2, 3, 2, 1],
         backgroundColor: [
             "rgba(75, 192, 192, 1)",
             "rgba(255, 159, 64, 1)",
