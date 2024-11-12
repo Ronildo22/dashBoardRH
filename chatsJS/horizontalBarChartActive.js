@@ -1,7 +1,7 @@
 import { sector } from "../databaseFictitious/sector.js";
 
 const horizontalBarChartActive = document
-    .querySelector("#horizontalBarChartActive")
+    .querySelector("#horizontal-bar-chart-active")
     .getContext("2d");
 
 export const objhorizontalBarChartActive = new Chart(horizontalBarChartActive, {

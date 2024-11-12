@@ -1,4 +1,4 @@
-const lineChart = document.querySelector("#lineChart").getContext("2d");
+const lineChart = document.querySelector("#line-chart").getContext("2d");
 const objLineChart = new Chart(lineChart, {
     type: "line",
     data: {

@@ -1,10 +1,9 @@
-import { updateHorizontalChartActive } from "./actionsCharts/updateHorizontalBarChartActive.js";
-import { updateHorizontalChartLack } from "./actionsCharts/updateHorizontalChartLack.js";
+import { updateHorizontalChart } from "./actionsCharts/updateHorizontalBarChart.js";
 import { sector } from "../databaseFictitious/sector.js";
 import { employeesActive } from "../databaseFictitious/employeesActive.js";
 import { employeesLack } from "../databaseFictitious/employeesLack.js";
 
-const barChart = document.querySelector("#barChart").getContext("2d");
+const barChart = document.querySelector("#bar-chart").getContext("2d");
 export const objBarChart = new Chart(barChart, {
     type: "bar",
     data: {
@@ -31,7 +30,6 @@ export const objBarChart = new Chart(barChart, {
             beginAtZero: true,
         },
         onClick: (e) => {
-
             // ADQUIRE A BARRA CLICADA E MOSTRA A QUANTIDADE DE FUNCIONARIOS POR CARGO
             const canvasPosition = Chart.helpers.getRelativePosition(
                 e,
@@ -42,8 +40,7 @@ export const objBarChart = new Chart(barChart, {
                 canvasPosition.x
             );
 
-            updateHorizontalChartActive(dataX);
-            updateHorizontalChartLack(dataX);
+            updateHorizontalChart(dataX);
         },
     },
 });
