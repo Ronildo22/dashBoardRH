@@ -19,6 +19,13 @@ export const objhorizontalBarChartLack = new Chart(horizontalBarChartLack, {
         ],
     },
     options: {
+        plugins: {
+            legend: {
+                labels: {
+                    color: 'rgba(255, 255, 255, 1)'
+                }
+            }
+        },
         ticks: {
             stepSize: 1,
             beginAtZero: true, 

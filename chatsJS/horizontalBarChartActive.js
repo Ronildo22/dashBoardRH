@@ -19,6 +19,13 @@ export const objhorizontalBarChartActive = new Chart(horizontalBarChartActive, {
         ],
     },
     options: {
+        plugins: {
+            legend: {
+                labels: {
+                    color: 'rgba(255, 255, 255, 1)'
+                }
+            }
+        },
         ticks: {
             stepSize: 1,
             beginAtZero: true, 

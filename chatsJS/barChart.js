@@ -26,6 +26,13 @@ export const objBarChart = new Chart(barChart, {
         ],
     },
     options: {
+        plugins: {
+            legend: {
+                labels: {
+                    color: 'rgba(255, 255, 255, 1)'
+                }
+            }
+        },
         y: {
             beginAtZero: true,
         },

@@ -36,6 +36,13 @@ const objLineChart = new Chart(lineChart, {
         ],
     },
     options: {
+        plugins: {
+            legend: {
+                labels: {
+                    color: 'rgba(255, 255, 255, 1)'
+                }
+            }
+        },
         responsive: true,
         scales: {
             y: {
