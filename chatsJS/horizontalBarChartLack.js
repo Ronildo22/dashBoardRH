@@ -19,6 +19,10 @@ export const objhorizontalBarChartLack = new Chart(horizontalBarChartLack, {
         ],
     },
     options: {
+        ticks: {
+            stepSize: 1,
+            beginAtZero: true, 
+        },
         indexAxis: "y",
     },
 });

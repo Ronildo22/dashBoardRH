@@ -19,6 +19,10 @@ export const objhorizontalBarChartActive = new Chart(horizontalBarChartActive, {
         ],
     },
     options: {
+        ticks: {
+            stepSize: 1,
+            beginAtZero: true, 
+        },
         indexAxis: "y",
     },
 });
