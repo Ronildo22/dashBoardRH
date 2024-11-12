@@ -1,7 +1,17 @@
+body {
+    background-color: #141720;
+}
+
 section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
     padding: 20px 20px;
+}
+
+.card-dashboard {
+    background-color: #303443;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #303443;
 }
 
 #barChart {
