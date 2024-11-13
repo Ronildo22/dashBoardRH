@@ -4,7 +4,6 @@ import { objhorizontalBarChartActive } from "../horizontalBarChartActive.js";
 import { infoSectorLack } from "../../databaseFictitious/infoSectorLack.js";
 import { objhorizontalBarChartLack } from "../horizontalBarChartLack.js";
 
-
 export function updateHorizontalChart(indexColunmChart) {
     /*
         Verfica qual barra do barChart foi clicada e atualiza o
@@ -22,6 +21,7 @@ export function updateHorizontalChart(indexColunmChart) {
 
     objhorizontalBarChartActive.update();
 
+    // -------------------------------------------------------------
 
     //horizontalbarChartLack
     objhorizontalBarChartLack.data.labels =
@@ -31,5 +31,4 @@ export function updateHorizontalChart(indexColunmChart) {
         infoSectorLack[nameSectorSelected.toUpperCase()].data;
 
     objhorizontalBarChartLack.update();
-
 }

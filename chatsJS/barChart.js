@@ -2,6 +2,7 @@ import { updateHorizontalChart } from "./actionsCharts/updateHorizontalBarChart.
 import { sector } from "../databaseFictitious/sector.js";
 import { employeesActive } from "../databaseFictitious/employeesActive.js";
 import { employeesLack } from "../databaseFictitious/employeesLack.js";
+import { updateLineChart } from "./actionsCharts/updateLineChart.js";
 
 const barChart = document.querySelector("#bar-chart").getContext("2d");
 export const objBarChart = new Chart(barChart, {
@@ -15,6 +16,7 @@ export const objBarChart = new Chart(barChart, {
                 backgroundColor: "rgba(54, 162, 235, 0.5)",
                 borderColor: "rgba(54, 162, 235, 1)",
                 borderWidth: 1,
+                color: "rgba(255, 255, 255, 1)",
             },
             {
                 label: "Funcionarios em Falta",
@@ -26,15 +28,32 @@ export const objBarChart = new Chart(barChart, {
         ],
     },
     options: {
+        scales: {
+            y: {
+                ticks: {
+                    color: "rgba(255, 255, 255, 1)",
+                },
+            },
+            x: {
+                ticks: {
+                    color: "rgba(255, 255, 255, 1)",
+                },
+            },
+        },
         plugins: {
             legend: {
                 labels: {
-                    color: 'rgba(255, 255, 255, 1)'
-                }
-            }
+                    color: "rgba(255, 255, 255, 1)",
+                },
+            },
         },
         y: {
             beginAtZero: true,
+        },
+        onHover: (event, chartElement) => {
+            // TROCA O PONTEIRO AO PASSAR O MOUSE SOBRE AS BARRAS DO GRAFICO
+            const canvas = event.native.target;
+            canvas.style.cursor = chartElement.length ? "pointer" : "default";
         },
         onClick: (e) => {
             // ADQUIRE A BARRA CLICADA E MOSTRA A QUANTIDADE DE FUNCIONARIOS POR CARGO
@@ -48,6 +67,10 @@ export const objBarChart = new Chart(barChart, {
             );
 
             updateHorizontalChart(dataX);
+            updateLineChart(dataX);
         },
+    },
+    defaults: {
+        color: "rgba(255, 255, 255, 1)",
     },
 });

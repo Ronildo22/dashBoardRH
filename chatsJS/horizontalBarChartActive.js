@@ -19,16 +19,28 @@ export const objhorizontalBarChartActive = new Chart(horizontalBarChartActive, {
         ],
     },
     options: {
+        scales: {
+            y: {
+                ticks: {
+                    color: "rgba(255, 255, 255, 1)",
+                },
+            },
+            x: {
+                ticks: {
+                    color: "rgba(255, 255, 255, 1)",
+                },
+            },
+        },
         plugins: {
             legend: {
                 labels: {
-                    color: 'rgba(255, 255, 255, 1)'
-                }
-            }
+                    color: "rgba(255, 255, 255, 1)",
+                },
+            },
         },
         ticks: {
             stepSize: 1,
-            beginAtZero: true, 
+            beginAtZero: true,
         },
         indexAxis: "y",
     },
