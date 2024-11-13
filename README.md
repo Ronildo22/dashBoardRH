@@ -10,3 +10,4 @@
 - CSS3
 - JavaScript Vanilla
 - ChartsJS
+- Bootstrap5
