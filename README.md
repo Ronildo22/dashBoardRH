@@ -6,8 +6,8 @@
 
 ## Developed in:
 
-- HTML5
-- CSS3
-- JavaScript Vanilla
-- ChartsJS
-- Bootstrap5
+-   HTML5
+-   CSS3
+-   JavaScript Vanilla
+-   Chart.JS
+-   Bootstrap5
