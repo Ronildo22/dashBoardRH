@@ -11,7 +11,15 @@
             crossorigin="anonymous"
         />
 
-        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/googleFonts.css" />
 
         <title>Gráfico de Barras</title>
 
@@ -19,38 +27,54 @@
     </head>
 
     <body>
-        <main>
-            <section class="container mt-2 card-dashboard p-5">
-                <div class="row d-flex justify-content-center">
+        <main class="container">
+            <section
+                class="row mt-2 card-dashboard justify-content-center pb-4"
+            >
+                <div class="row box-card">
                     <header>
-                        <div class="text-center mt-2 mb-4 p-4 text-light">
-                            <h1>DashBoard RH</h1>
+                        <div
+                            class="text-center roboto-medium mt-2 mb-4 p-4 text-light align"
+                        >
+                            <h1>Dashboard RH</h1>
                         </div>
+                        <p class="text-secondary roboto-medium">
+                            <img src="./assets/icons/icon_click.svg" alt="" />
+                            Selecione um setor do gráfico abaixo
+                        </p>
                     </header>
-                    <div class="row">
-                        <div class="col-6">
-                            <h5 class="row d-flex justify-content-center text-light">
+                    <div class="row justify-content-evenly">
+                        <div class="col-6 box-chart">
+                            <h5
+                                class="row d-flex justify-content-center text-light"
+                            >
                                 Quantidade Funcionarios
                             </h5>
                             <canvas id="bar-chart"></canvas>
                         </div>
-                        <div class="col-6">
-                            <h5 class="row d-flex justify-content-center text-light">
+                        <div class="col-6 box-chart">
+                            <h5
+                                class="row d-flex justify-content-center text-light"
+                            >
                                 Índices de Turnover
                             </h5>
                             <canvas id="line-chart"></canvas>
                         </div>
                     </div>
-                    <div class="row mt-5">
-                        <div class="col-6">
-                            <h5 class="col-11 d-flex justify-content-center text-light">
+                    <div class="row mt-5 justify-content-evenly">
+                        <div class="col-6 box-chart">
+                            <h5
+                                class="col-11 d-flex justify-content-center text-light"
+                            >
                                 Quantidade por Cargo (Ativo)
                             </h5>
 
                             <canvas id="horizontal-bar-chart-active"></canvas>
                         </div>
-                        <div class="col-6">
-                            <h5 class="row d-flex justify-content-center text-light">
+                        <div class="col-6 box-chart">
+                            <h5
+                                class="row d-flex justify-content-center text-light"
+                            >
                                 Quantidade por Cargo (Faltante)
                             </h5>
                             <canvas id="horizontal-bar-chart-lack"></canvas>
@@ -69,11 +93,6 @@
         <script
             type="module"
             src="./chatsJS/horizontalBarChartLack.js"
-        ></script>
-
-        <script
-            type="module"
-            src="chatsJS/actionsCharts/writeSectorNameChart.js"
         ></script>
 
         <!-- ChartJS -->
